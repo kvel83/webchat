@@ -1,7 +1,8 @@
 //CAMBIA USUARIO ACTIVO EN MENU LATERAL
 function showUser(userInfo,userForChange){
-    let userName = userInfo[0].getElementsByClassName("userName"),
-    imageName=userForChange.children[1].children[0].textContent.replace(/\s+/g, '')
+    let userName = userInfo[0].getElementsByClassName("userName");
+    imageName=userForChange.children[1].children[0].textContent.replace(/\s+/g, '');
+    imageName=removeAccents(imageName);
     userImage = userInfo[0].getElementsByClassName("photos");
     userName[0].textContent=userForChange.children[1].children[0].textContent;
     userImage[0].src="http://127.0.0.1:5500/assets/img/"+imageName+".jpg";
@@ -93,4 +94,19 @@ function cleanMessageBox(){
     if (document.getElementById("message").value=="Escriba su mensaje..."){
         document.getElementById("message").value=""
     }
+}
+
+//FUNCION PARA REMOVER TILDES
+function removeAccents(word) {
+    let name=word.replace("Á", "A")
+            .replace("É", "E")
+            .replace("Í", "I")
+            .replace("Ó", "O")
+            .replace("Ú", "U")
+            .replace("á", "a")
+            .replace("é", "e")
+            .replace("í", "i")
+            .replace("ó", "o")
+            .replace("ú", "u");
+    return name;
 }
