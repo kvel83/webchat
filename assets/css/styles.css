@@ -1,0 +1,70 @@
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    display: flex;
+    height: 100vh;
+    font-family: 'open sans','roboto';
+}
+.users,.userId,.icons,.general,.menu{
+    display: flex;
+    align-items: center;
+}
+.menu,.general{
+    flex-direction:column;
+}
+.activeUser{
+    display: flex;
+    justify-content: space-between;
+}
+.general{
+    flex: content;
+    justify-content: center;
+    width:80%;
+}
+.btn{
+    background-color: #A491D2;
+    border-color: #A491D2;
+}
+.btn:hover{
+    background-color: #cdc3e6;
+    border-color:#cdc3e6 ;
+}
+.btn:focus{
+    background-color: #bec1bb;
+    border-color:#bec1bb ;
+}
+.photos,.menu{
+    width: 25%;
+}
+.general img{
+    width: 25%;
+}
+.userId .status,.users p{
+    font-size: smaller;
+}
+b{
+    font-family: 'roboto';
+}
+.areaChat{
+    display: none;
+ }
+ .message{
+    justify-content: end;
+ }
+ .imgActive{
+    width: 5%;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
