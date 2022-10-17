@@ -3,6 +3,8 @@
 Proyecto realizado para evaluación de manejo de Flexbox durante la carrera de FullStack Javascript Developer en Desafío Latam.
 Este proyecto fue desarrollado en HTML, utilizando CSS para manejo de posicionamiento de elementos con Flexbox , Bootstrap para manejo de estilos y Javascript para implementación de funcionalidades extras.
 
+Link: https://kvel83.github.io/webchat/
+
 **Funcionalidades Extras**
 
 Estas funcionalidades se implementan en Javascript desde donde se da manejo de Flexbox y estilos para que queden coherentes en la visualización de la maqueta.
