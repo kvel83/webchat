@@ -1,11 +1,13 @@
 //CAMBIA USUARIO ACTIVO EN MENU LATERAL
 function showUser(userInfo,userForChange){
     let userName = userInfo[0].getElementsByClassName("userName");
-    imageName=userForChange.children[1].children[0].textContent.replace(/\s+/g, '');
+    let imageName=userForChange.children[1].children[0].textContent.replace(/\s+/g, '');
     imageName=removeAccents(imageName);
+    imageName=imageName.toLowerCase();
     userImage = userInfo[0].getElementsByClassName("photos");
     userName[0].textContent=userForChange.children[1].children[0].textContent;
-    userImage[0].src="http://127.0.0.1:5500/assets/img/"+imageName+".jpg";
+    userImage[0].src="./assets/img/"+imageName+".jpg";
+    userImage[0].alt=userName[0].textContent;
 
 }
 
